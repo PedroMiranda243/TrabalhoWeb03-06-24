@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    
+}
+nav{
+    position: static;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinhar verticalmente */
+    flex-direction: column; /* Disposição em coluna */
+}
+
+.left-content {
+    display: flex;
+    align-items: flex-start; /* Alinhar verticalmente */
+}
+
+.footer-text {
+    margin-left: 20px;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+.equipe-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+}
+.container-pedro,.container-camile,.container-rick,.container-icaro,.container-rodrigo,.container-jr{
+    background-color: rgb(211, 193, 193);
+    margin: 10px;
+}
