@@ -39,12 +39,6 @@ nav{
 .social-media a {
     margin-right: 10px;
 }
-.equipe-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 300px);
-}
-.container-pedro,.container-camile,.container-rick,.container-icaro,.container-rodrigo,.container-jr{
-    background-color: rgb(211, 193, 193);
-    margin: 10px;
+#logo{
+   
 }
