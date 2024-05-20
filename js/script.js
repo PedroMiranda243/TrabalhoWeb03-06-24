@@ -53,7 +53,7 @@ function handleCadastro(event) {
             alert('Usuário cadastrado com sucesso!');
             console.log('Usuário cadastrado:', newUser);
             console.log('Usuários cadastrados:', users);
-            window.location.href = 'index.html';
+            window.location.href = 'loginpage.html';
         }
 
     } else {
@@ -119,10 +119,10 @@ function menuShow() {
     const menuMobile = document.querySelector('.mobile-menu');
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "/imgs/icons8-menu.svg";
+        document.querySelector('.icon').src = "../imgs/icons8-menu.svg";
     } else {
         menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "/imgs/icons8-close.svg";
+        document.querySelector('.icon').src = "../imgs/icons8-excluir-50.png";
     }
 } 
 //para usar no console 

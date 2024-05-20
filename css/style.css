@@ -10,8 +10,8 @@
     font-style: normal;
 }
 body{
-    height: 100%;
     background-image: url("../imgs/copper-icosahedron-pattern-black.jpg");
+    background-attachment: fixed;
     background-position:  center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,9 +107,6 @@ header {
     .nav-item {
         display: none;
     }
-    body{
-        background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.7));
-    }
     .login-button {
         display: none;
     }
@@ -119,12 +116,6 @@ header {
     .header-logo{
         margin-right: 0px;
     }
-    .img-hime {
-        display: none;
-      }
-      .img-yuzu{
-        display: none;
-      }
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
@@ -150,4 +141,50 @@ header {
     .open {
         display: block;
     }
+}
+@media screen and (max-width:570px) {
+    .img-hime {
+        display: none;
+      }
+      .img-yuzu{
+        display: none;
+      }
+}
+@media screen and (max-width:430px){
+    .nav-bar{
+        padding: 3.5rem 3rem;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .logo{
+        margin-bottom: 25px;
+        justify-content: center;
+    }
+    .mobile-menu-icon{
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+footer {
+    width: 100%;
+    text-align: center; /* Centralize o texto */
+    background-color:   transparent; /* Mesma cor do header para consistência */
+    color: white; /* Texto branco para contraste */
+    padding: 20px 0; /* Adicione padding para espaçamento */
+    position: relative;
+    bottom: 0;
+    margin-top: 200px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Altere para coluna em telas pequenas */
+    align-items: center; /* Centralize os itens */
+}
+
+.footer-text, .social-media {
+    margin: 10px 0; /* Espaçamento entre os itens */
 }
