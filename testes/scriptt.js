@@ -30,7 +30,7 @@ function handleCadastro(event) {
             users.push(user);
             localStorage.setItem('users', JSON.stringify(users));
             alert('Usuário cadastrado com sucesso!');
-            window.location.href = 'index.html';
+            window.location.href = 'testes/index.html';
         }
     }
 }
@@ -47,7 +47,7 @@ function handleLogin(event) {
     if (user) {
         alert('Login realizado com sucesso!');
         // Redirecionar para a página principal ou outra página
-        window.location.href = 'main-page.html';
+        window.location.href = '../html/main-page.html';
     } else {
         alert('Email ou senha incorretos.');
     }
