@@ -1,66 +1,83 @@
-function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "";
-    } else {
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "";
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.getElementById('login-form');
+    const cadastroForm = document.getElementById('cadastro-form');
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', handleLogin);
     }
-}
-//salvar os usuários no localstorage 
+
+    if (cadastroForm) {
+        cadastroForm.addEventListener('submit', handleCadastro);
+    }
+
+    console.log('Usuários cadastrados:', loadUsers());
+});
+
 function saveUsers(users) {
-        localStorage.setItem('users',JSON.stringify(users));
+    localStorage.setItem('users', JSON.stringify(users));
 }
-function loadUsers(){
+
+function loadUsers() {
     return JSON.parse(localStorage.getItem('users')) || [];
 }
-//add um user
-function addUser(email,password){
-    const users = loadUsers();
-    users.push({email,password});
-    saveUsers(users);
-    renderUsers();
-}
-function editUser(index) {
-    const users = loadUsers();
-    const { name, email } = users[index];
-    const newName = prompt('Novo nome:', name);
-    const newEmail = prompt('Novo email:', email);
-    if (newName !== null && newEmail !== null) {
-        users[index] = { name: newName, email: newEmail };
-        saveUsers(users);
-        renderUsers();
-    }
-}
-function renderUsers() {
-    const userList = document.getElementById('userList');
-    userList.innerHTML = '';
-    const users = loadUsers();
-    users.forEach((user, index) => {
-        const li = document.createElement('li');
-        li.innerHTML = `
-            <span>${user.name} (${user.email})</span>
-            <button onclick="editUser(${index})">Editar</button>
-            <button onclick="deleteUser(${index})">Excluir</button>
-        `;
-        userList.appendChild(li);
-    });
-}
-//delete user
-function deleteUser(index){
-    const users = loadUsers();
-    users.splice(index,1);
-    saveUsers(users);
-    renderUsers();
-}
-//pegar informações do form
-document.getElementById('login-form').addEventListener('submit',function(event){
+
+function handleCadastro(event) {
     event.preventDefault();
+    
+    const name = document.getElementById('name-input').value;
     const email = document.getElementById('email-input').value;
     const password = document.getElementById('password-input').value;
-    addUser(email,password);
-    console.log(email,password);
-    this.reset();
-});
-renderUsers();
+
+    if (email && password && name) {
+        const users = loadUsers();
+        
+        if (users.find(user => user.email === email)) {
+            alert('Usuário já cadastrado com esse email.');
+        } else {
+            const newUser = { name, email, password };
+            users.push(newUser);
+            saveUsers(users);
+            alert('Usuário cadastrado com sucesso!');
+            console.log('Usuário cadastrado:', newUser);
+            console.log('Usuários cadastrados:', users);
+            window.location.href = 'index.html';
+        }
+    } else {
+        alert('Todos os campos são obrigatórios.');
+    }
+}
+
+function handleLogin(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById('email-input').value;
+    const password = document.getElementById('password-input').value;
+    
+    const users = loadUsers();
+    const user = users.find(user => user.email === email && user.password === password);
+    
+    if (user) {
+        alert('Login realizado com sucesso!');
+        console.log('Usuário logado:', user);
+        window.location.href = '../html/main-page.html';
+    } else {
+        alert('Email ou senha incorretos.');
+    }
+}
+
+function menuShow() {
+    const menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')) {
+        menuMobile.classList.remove('open');
+        document.querySelector('.icon').src = "/imgs/icons8-menu.svg";
+    } else {
+        menuMobile.classList.add('open');
+        document.querySelector('.icon').src = "/imgs/icons8-close.svg";
+    }
+} 
+//para usar no console 
+function clearUsers() {
+    localStorage.removeItem('users');
+    console.log('Todos os usuários foram removidos do localStorage.');
+    renderUsers();  // Atualiza a lista de usuários na interface, se aplicável
+}
