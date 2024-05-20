@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'MavenPro-Bold';
+    src: url('../fonts/MavenPro-Bold.ttf') format('truetype');
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    height: 100%;
+    background-image: url("../imgs/copper-icosahedron-pattern-black.jpg");
+    background-position:  center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #23252b;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+.header-logo {
+    width: 145px;
+    height: 24px;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 100px;
+    color: #f47521;
+    transition: .3s ease;
+    background-image: url("../imgs/Crunchyroll-Symbol.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-decoration: none;
+    font-family: MavenPro-Bold;
+}
+.header-logo:hover {
+    color: #FFFFFF;
+    background-image: url("../imgs/Crunchyroll-Symbol-branco.png");
+}
+.nav-list {
+    display: flex;
+    align-items: center;    
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color:#f47521;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* responsividade */
+@media screen and (max-width: 750px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    body{
+        background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .header-logo{
+        margin-right: 0px;
+    }
+    .img-hime {
+        display: none;
+      }
+      .img-yuzu{
+        display: none;
+      }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}

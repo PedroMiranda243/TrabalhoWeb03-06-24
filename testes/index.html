@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/default-styles.css">
+    <link rel="stylesheet" href="../css/loginpage-styles.css">
+    <link rel="shortcut icon" href="imgs/icons8-crunchyroll-48.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Nossa Equipe</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Navegar</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a class="header-logo" href="../html/main-page.html">Crunchyroll</a>
+            </div>
+            <div class="login-button">
+                <button><a href="html/login-page.html"><img src="../imgs/icons8-conta-48.png" alt=""></a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../imgs/icons8-menu.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Nossa Equipe</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Navegar</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <div id="container-login">
+                <img class="img-hime" src="../imgs/log-in-hime.png" alt="">
+                <div class="form-container">
+                    <form id="login-form" action="">
+                        <h3>Login</h3>
+                        <span>Endereço de E-mail</span>
+                        <input id="email-input" type="email" name="email" placeholder autocomplete="off" required>
+                        <span>Senha</span>
+                        <input id="password-input" type="password" name="password" placeholder autocomplete="off" required>
+                        <button type="submit">LOGIN</button>
+                        <span>Não possui uma conta? <a href="cadastro.html">CRIE UMA</a></span>
+                        <img class="img-yuzu" src="../imgs/log-in-yuzu.png" alt="">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+      <footer>
+        <div class="footer-content">
+            <div class="left-content">
+                <div class="footer-text">
+                    <h4>Crunchyroll</h3>
+                    <p>© Copyright 2023 Crunchyroll - Todos os direitos reservados</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="social-media">
+                    <a href=""><img src="" alt="Instagram"></a>
+                    <a href=""><img src="" alt="Facebook"></a>
+                    <a href="https://www.youtube.com/@CrunchyrollBR"><img src="" alt="Youtube"></a>
+                </div>
+            </div>
+        </div>
+      </footer> 
+    <script src="scriptt.js"></script>
+</body>
+
+
+</html>
