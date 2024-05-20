@@ -58,3 +58,7 @@ body,html {
     margin-top: 200px;
   }
 
+/* pode apagar, foi o professor */
+#linha{
+  border-bottom: 2px solid white;
+}
