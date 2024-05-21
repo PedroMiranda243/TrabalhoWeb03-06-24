@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'MavenPro-Bold';
+    src: url('../fonts/MavenPro-Bold.ttf') format('truetype');
+}
+
+header {
+    background-color: #23252b !important;
+    box-shadow: 0px 3px 10px #464646;
+    width: 100%;
+    padding: 15px 4%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(39, 39, 39) 90.2%) !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* estilização do conteúdo */
+
+section{
+    padding: 90px 4%;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2{
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+section p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+

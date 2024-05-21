@@ -9,11 +9,11 @@ body,html {
     color: white;
     max-width: 600px;
     margin: 0 auto;
-    padding: 50px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:35px;
   }
   
   #bt-login{
@@ -56,5 +56,17 @@ body,html {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 200px;
+  }
+  @media screen and (max-width:230px) {
+    #container-login{
+      padding: 0;
+    }
+    #login-form{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(7, auto);
+      justify-content: center;
+      height: 250px;
+    }
   }
 

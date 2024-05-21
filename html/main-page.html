@@ -3,47 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/default-styles.css">
-    <link rel="stylesheet" href="../css/main-styless.css">
+    <link rel="stylesheet" href="../css/carrousel-styles.css">
+    <link rel="stylesheet" href="../css/main-styles.css">
+    <link rel="stylesheet" href="../css/style.css">
+
     <link rel="shortcut icon" href="../imgs/icons8-crunchyroll-48.png" type="image/x-icon">
-    <title>Document</title>
+    <title>Crunchyroll</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="header-logo">
-                <a href="../html/main-page.html">
-                    <img id="logo" src="../imgs/logo.png" alt="">AnimesFlix
-                </a>
-            </div>
-            <a href="../html/about-us.html">Nossa Equipe</a>
-            <a href="../html/login-page.html">Login</a>
-            <a href="../html/main-page.html">Navegar</a>
-        </nav>
-    </header>
+    <nav class="nav-bar">
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="about-us.html" class="nav-link">Nossa Equipe</a></li>
+                <li class="nav-item"><a href="main-page.html" class="nav-link"> Navegar</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <a class="header-logo" href="../html/main-page.html">Crunchyroll</a>
+        </div>
+        <div class="login-button">
+            <button><a href="loginpage.html"><img src="../imgs/icons8-conta-48.png" alt=""></a></button>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="../imgs/icons8-menu.svg" alt=""></button>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="about-us.html" class="nav-link">Nossa Equipe</a></li>
+            <li class="nav-item"><a href="main-page.html" class="nav-link">Navegar</a></li>
+        </ul>
+
+        <div class="login-button">
+            <button><a href="#">Entrar</a></button>
+        </div>
+    </div>
     
     <main>
-
+        <section class="slider">
+            <div class="slider-content">
+                
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+    
+                <div class="slide-box primeiro">
+                    <img class="img-desktop" src="../imgs/jujutsu.jpeg" alt="slide 1">
+                    <!-- <img class="img-mobile" src="img/slide-1-mob.jpg" alt="slide 1"> -->
+                </div>
+    
+                <div class="slide-box">
+                    <img class="img-desktop" src="../imgs/jujutsu.jpeg" alt="slide 3">
+                    <!-- <img class="img-mobile" src="img/slide-2-mob.jpg" alt="slide 1"> -->
+                </div>
+    
+                <div class="slide-box">
+                    <img class="img-desktop" src="../imgs/jujutsu.jpeg" alt="slide 3">
+                    <!-- <img class="img-mobile" src="img/slide-3-mob.jpg" alt="slide 3"> -->
+                </div>
+    
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+    
+            </div>
+        </section>
     </main>
-
-    <footer class="position-relative">
+<footer>
     <div class="footer-content">
         <div class="left-content">
-            <a href="../html/index.html"><img id="footer-img" width="100" src="../img/cabalo.png" alt=""></a>
             <div class="footer-text">
-                <h3>PainNassau</h3>
-                <h1>© Copyright 2023 PainNassau - Todos os direitos reservados</p>
+                <h4>Crunchyroll</h3>
+                <p>© Copyright 2023 Crunchyroll - Todos os direitos reservados</p>
+                <hr>
             </div>
         </div>
         <div class="right-content">
             <div class="social-media">
-                <a href="https://www.instagram.com/painnassaufc/"><img src="../img/icons8-instagram-48.png" alt="Instagram"></a>
-                <a href="https://web.facebook.com/profile.php?id=61553317276428"><img src="../img/icons8-facebook-48.png" alt="Facebook"></a>
-                <a href="https://www.tiktok.com/@painnassauoficial3?_t=8hRE4AzGFug&_r=1"><img src="../img/icons8-tiktok-48.png" alt="TikTok"></a>
-                <a href="https://www.youtube.com/channel/UCvY52rmHtvQ-KkVlDeuslYA"><img src="../img/icons8-reproduzir-youtube-48.png" alt="Youtube"></a>
+                <a href=""><img src="" alt="Instagram"></a>
+                <a href=""><img src="" alt="Facebook"></a>
+                <a href="https://www.youtube.com/@CrunchyrollBR"><img src="" alt="Youtube"></a>
             </div>
         </div>
     </div>
-    
+</footer>
+<script src="../js/carrousel-script.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
