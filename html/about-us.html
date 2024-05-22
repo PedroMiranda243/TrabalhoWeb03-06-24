@@ -4,22 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landpage</title>
-    <link rel="stylesheet" href="../css/default-styles.css">
+    <link rel="stylesheet" href="../css/style.css"> 
     <link rel="stylesheet" href="../css/landpage-styles.css">
+
     <link rel="shortcut icon" href="../imgs/icons8-crunchyroll-48.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="header-logo">
-                <a href="../html/main-page.html">
-                    <img id="logo" src="../imgs/logo.png" alt="">AnimesFlix
-                </a>
+        <nav class="nav-bar">
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="about-us.html" class="nav-link">Nossa Equipe</a></li>
+                    <li class="nav-item"><a href="main-page.html" class="nav-link"> Navegar</a></li>
+                </ul>
             </div>
-           <a href="about-us.html">Nossa Equipe</a>
-           <a href="../html/login-page.html">Login</a>
-           <a href="../html/main-page.html">Navegar</a>
+            <div class="logo">
+                <a class="header-logo" href="../html/main-page.html">Crunchyroll</a>
+            </div>
+            <div class="login-button">
+                <button><a href="loginpage.html"><img src="../imgs/icons8-conta-48.png" alt=""></a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../imgs/icons8-menu.svg" alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="about-us.html" class="nav-link">Nossa Equipe</a></li>
+                <li class="nav-item"><a href="main-page.html" class="nav-link">Navegar</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
     </header>
     
     <main>
@@ -41,31 +60,28 @@
                 <h1>Rodrigo Roberto</h1>
             </div>
             <div class="container-jr">
-                <h1>Ernio Jr</h1>
+                <h1>Evânnio Jr</h1>
             </div>
         </div>
     </main>
 
-    <footer class="position-relative">
+    <footer>
         <div class="footer-content">
             <div class="left-content">
-                <a href="../html/index.html"><img id="footer-img" width="100" src="../img/cabalo.png" alt=""></a>
                 <div class="footer-text">
-                    <h3>PainNassau</h3>
-                    <h1>© Copyright 2023 PainNassau - Todos os direitos reservados</p>
+                    <h4>Crunchyroll</h3>
+                    <p>© Copyright 2023 Crunchyroll - Todos os direitos reservados</p>
+                    <hr>
                 </div>
             </div>
             <div class="right-content">
                 <div class="social-media">
-                    <a href="https://www.instagram.com/painnassaufc/"><img src="../img/icons8-instagram-48.png" alt="Instagram"></a>
-                    <a href="https://web.facebook.com/profile.php?id=61553317276428"><img src="../img/icons8-facebook-48.png" alt="Facebook"></a>
-                    <a href="https://www.tiktok.com/@painnassauoficial3?_t=8hRE4AzGFug&_r=1"><img src="../img/icons8-tiktok-48.png" alt="TikTok"></a>
-                    <a href="https://www.youtube.com/channel/UCvY52rmHtvQ-KkVlDeuslYA"><img src="../img/icons8-reproduzir-youtube-48.png" alt="Youtube"></a>
+                    <a href="https://www.instagram.com/crunchyroll_pt/?hl=pt-br" target="_blank"><img src="../imgs/redesociais/icons8-instagram-48 (1).png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/Crunchyroll.pt/" target="_blank"><img src="../imgs/redesociais/icons8-facebook-novo-48.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com/@CrunchyrollBR" target="_blank"><img src="../imgs/redesociais/icons8-youtube-48.png" alt="Youtube"></a>
                 </div>
             </div>
         </div>
-    </footer>
-    
-    
+      </footer>   
 </body>
 </html>

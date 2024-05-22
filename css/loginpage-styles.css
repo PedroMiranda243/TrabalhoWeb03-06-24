@@ -41,6 +41,14 @@ body,html {
     inset-inline-start: -8.875rem;
     width: 11.625rem;
   }
+  .img-hime-cadastro{
+    inset-block-start: -3.125rem;
+    inset-inline-start: -8rem;
+    width: 9.5rem;
+    z-index: 2;
+    position: absolute;
+
+  }
   .img-yuzu{
     position: absolute;
     z-index: 2;
