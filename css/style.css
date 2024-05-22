@@ -17,8 +17,6 @@ body{
     background-repeat: no-repeat;
 }
 
-
-
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -36,6 +34,7 @@ body{
 .logo h1 {
     color: #fff;
 }
+
 .header-logo {
     width: 145px;
     height: 24px;
