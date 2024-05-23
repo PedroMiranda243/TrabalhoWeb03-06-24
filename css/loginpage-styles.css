@@ -1,80 +1,136 @@
 body,html {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    position: relative;
-    }
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  position: relative;
+}
   
-  #container-login {
-    background-color: #141519d7;
-    color: white;
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:35px;
-  }
+#container-login {
+  background-color: #141519d7;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:35px;
+}
+#container-login a{
+  transition: 0.5s;
+}
+#container-login a:hover{
+  color: #FFF;
+}
   
-  #bt-login{
-    margin-right: 15px;
+#bt-login{
+  margin-right: 15px;
+}
+
+#login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#login-form h2{
+  text-align: center;
+  margin: 10px;
+  padding-bottom: 5px;
+}
+
+.link-login{
+  color: #f47521;
+  text-decoration: none;
+}
+
+.btn-login{
+  background-color: #f47521;
+  font-size: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#email-input {
+  background-color: #141519d7;
+  color: #FFF;
+  outline: none;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+#password-input {
+  background-color: #141519d7;
+  color: #FFF;
+  outline: none;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+#cadastro-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#name-input{
+  background-color: #141519d7;
+  color: #FFF;
+  outline: none;
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+}
+
+#cadastro-form h2{
+  text-align: center;
+  margin: 10px;
+  padding-bottom: 5px;
+}
+
+.img-hime{
+  position: absolute;
+  z-index: 2;
+  inset-block-start: -2.75rem;
+  inset-inline-start: -8.875rem;
+  width: 11.625rem;
+}
+.img-hime-cadastro{
+  inset-block-start: -3.125rem;
+  inset-inline-start: -8rem;
+  width: 9.5rem;
+  z-index: 2;
+  position: absolute;
+}
+.img-yuzu{
+  position: absolute;
+  z-index: 2;
+  inset-block-start: 21.125rem;
+  inset-inline-end: -5.5rem;
+  width: 7.375rem;
+}
+.content-wrapper{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 200px;
+}
+@media screen and (max-width:230px) {
+  #container-login{
+    padding: 0;
   }
   #login-form{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, auto);
     justify-content: center;
+    height: 250px;
   }
-  #login-form h3{
-    text-align: center;
-    margin: 10px;
-  }
-  #cadastro-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
- 
-  .img-hime{
-    position: absolute;
-    z-index: 2;
-    inset-block-start: -2.75rem;
-    inset-inline-start: -8.875rem;
-    width: 11.625rem;
-  }
-  .img-hime-cadastro{
-    inset-block-start: -3.125rem;
-    inset-inline-start: -8rem;
-    width: 9.5rem;
-    z-index: 2;
-    position: absolute;
-
-  }
-  .img-yuzu{
-    position: absolute;
-    z-index: 2;
-    inset-block-start: 21.125rem;
-    inset-inline-end: -5.5rem;
-    width: 7.375rem;
-  }
-  .content-wrapper{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 200px;
-  }
-  @media screen and (max-width:230px) {
-    #container-login{
-      padding: 0;
-    }
-    #login-form{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(7, auto);
-      justify-content: center;
-      height: 250px;
-    }
-  }
-
+}

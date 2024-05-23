@@ -54,6 +54,7 @@ body{
     color: #FFFFFF;
     background-image: url("../imgs/Crunchyroll-Symbol-branco.png");
 }
+
 .nav-list {
     display: flex;
     align-items: center;    
@@ -70,17 +71,15 @@ body{
     transition: 0.2s;
 }
 
-
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
     color: #fff;
     font-weight: 400;
+    transition: .3s ease;
 }
-
 .nav-link:hover {
     color: #f47521;
-
 }
 
 .login-button button{
@@ -90,11 +89,9 @@ body{
     background-color:#f47521;
     transition: 1.1s;
 }   
-
 .login-button button:hover {
     transform: scale(1.1rem);
 }
-
 .login-button button a {
     text-decoration: none;
     color: #fff;
