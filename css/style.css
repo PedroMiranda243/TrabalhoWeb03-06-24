@@ -223,3 +223,10 @@ footer {
 .footer-text, .social-media {
     margin: 10px 0; /* Espaçamento entre os itens */
 }
+
+#insta:hover, #youtube:hover, #facebook:hover{
+    display: inline-block;
+    transform:scale(1.05);
+    box-shadow: 0px 0px 8px rgb(255, 243, 236);
+    border-radius: 50px;
+}
