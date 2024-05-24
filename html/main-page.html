@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/carrousel-styles.css">
     <link rel="stylesheet" href="../css/main-styles.css">
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/anime-slider.css">
     <link rel="shortcut icon" href="../imgs/icons8-crunchyroll-48.png" type="image/x-icon">
     <title>Crunchyroll</title>
 </head>
@@ -49,17 +49,18 @@
                 <input type="radio" name="btn-radio" id="radio3">
     
                 <div class="slide-box primeiro">
-                    <img class="img-desktop" src="../imgs/jujutsu.jpeg" alt="slide 1">
+                    <img class="jujutsu-logo" alt="logo" src="../imgs/Jujutsu_Kaisen_logo.png">
+                    <img class="img-desktop" src="../imgs/jujutsu-capa.jpg" alt="slide 3">
                     <!-- <img class="img-mobile" src="img/slide-1-mob.jpg" alt="slide 1"> -->
                 </div>
-    
+                
                 <div class="slide-box">
-                    <img class="img-desktop" src="../imgs/jujutsu.jpeg" alt="slide 3">
+                    <img class="img-desktop" src="../imgs/soul-eater-card.jpe" alt="slide 3">
                     <!-- <img class="img-mobile" src="img/slide-2-mob.jpg" alt="slide 1"> -->
                 </div>
-    
+                
                 <div class="slide-box">
-                    <img class="img-desktop" src="../imgs/jujutsu.jpeg" alt="slide 3">
+                    <img class="img-desktop" src="../imgs/big-chainsaw.png" alt="slide 1">
                     <!-- <img class="img-mobile" src="img/slide-3-mob.jpg" alt="slide 3"> -->
                 </div>
     
@@ -77,26 +78,61 @@
     
             </div>
         </section>
-    </main>
+        <section class="main-slider">
+
+        </section>
+        <div class="container">
+            <div class="carousel-view">
+              <button id="prev-btn" class="prev-btn">
+               <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+                <img src="../imgs/icons8-voltar-50.png" width="20"  alt="">
+        
+              </button>
+              <div id="item-list" class="item-list">
+                   <img id="jujutsu-card" class="item"/>
+                    <img id="demon-slayer-card" class="item" src=""/>
+                    <img id="solo-leveling-card" class="item" src=""/>
+                    <img id="chainsaw-man-card" class="item" src=""/>
+                    <img id="onepiece-card" class="item" src=""/>
+                    <img id="soul-eater-card" class="item" src=""/>
+                    <img id="spyx-family-card" class="item" src=""/>
+                    <img id="konosuba-3-card" class="item" src=""/>
+                    <img id="blue-lock-card" class="item" src=""/>
+                    <img id="frieren-card" class="item" src=""/>
+                </div>
+              <button id="next-btn" class="next-btn">
+                    <img src="../imgs/icons8-avançar-50.png" width="20" alt="">
+           
+          </svg>
+                  </button>
+              </div>
+          </div>
+
+    
+
 <footer>
     <div class="footer-content">
         <div class="left-content">
             <div class="footer-text">
                 <h4>Crunchyroll</h3>
-                <p>© Copyright 2023 Crunchyroll - Todos os direitos reservados</p>
-                <hr>
+                    <p>© Copyright 2023 Crunchyroll - Todos os direitos reservados</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="right-content">
+                <div class="social-media">
+                    <a href="https://www.instagram.com/crunchyroll_pt/?hl=pt-br" target="_blank"><img src="../imgs/redesociais/icons8-instagram-48 (1).png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/Crunchyroll.pt/" target="_blank"><img src="../imgs/redesociais/icons8-facebook-novo-48.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com/@CrunchyrollBR" target="_blank"><img src="../imgs/redesociais/icons8-youtube-48.png" alt="Youtube"></a>
+                </div>
             </div>
         </div>
-        <div class="right-content">
-            <div class="social-media">
-                <a href="https://www.instagram.com/crunchyroll_pt/?hl=pt-br" target="_blank"><img src="../imgs/redesociais/icons8-instagram-48 (1).png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/Crunchyroll.pt/" target="_blank"><img src="../imgs/redesociais/icons8-facebook-novo-48.png" alt="Facebook"></a>
-                <a href="https://www.youtube.com/@CrunchyrollBR" target="_blank"><img src="../imgs/redesociais/icons8-youtube-48.png" alt="Youtube"></a>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
+    
+
+    
 <script src="../js/carrousel-script.js"></script>
 <script src="../js/script.js"></script>
+<script src="../js/animes-slider.js"></script>
 </body>
 </html>

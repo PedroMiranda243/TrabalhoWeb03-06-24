@@ -1,3 +1,4 @@
+
 section.slider{
     margin: 0 auto;
     width: 100%;
@@ -22,6 +23,9 @@ section.slider{
     position: relative;
     text-align: center;
     transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .slide-box img{
@@ -31,7 +35,7 @@ section.slider{
   .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 35%;
+    margin-top: 50%;
     display: flex;
     justify-content: center;
   }
@@ -79,8 +83,11 @@ section.slider{
   
     .nav-auto, .nav-manual{
         margin-top: 60%;
+        display: none;
     }
   }
-
+.img-desktop{
+  position: relative;
+}
 
   
