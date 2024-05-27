@@ -13,6 +13,7 @@ body,html {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
   padding:35px;
 }
 #container-login a{
@@ -52,6 +53,8 @@ body,html {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  height: 40px;
+  margin: 20px;
 }
 .btn-login:hover{
   background-color: #fca66d9a;
@@ -64,6 +67,8 @@ body,html {
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
+  height: 40px;
+  margin: 5px;
 }
 #password-input {
   background-color: #141519d7;
@@ -72,6 +77,8 @@ body,html {
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
+  height: 40px;
+  margin: 5px;
 }
 
 
@@ -88,6 +95,8 @@ body,html {
 padding: 5px 10px;
 border: none;
 border-radius: 5px;
+height: 40px;
+margin: 5px;
 }
 
 #cadastro-form h2{
@@ -109,6 +118,18 @@ border-radius: 5px;
   width: 9.5rem;
   z-index: 2;
   position: absolute;
+}
+.img-yuzu-cadastro{
+  position: absolute;
+  z-index: 2;
+  inset-block-start: -2.0625rem;
+  inset-inline-end: -1.625rem;
+  width: 6.625rem;
+}
+@media screen and (max-width:380px){
+  .img-yuzu-cadastro{
+    display: none;
+  }
 }
 .img-yuzu{
   position: absolute;
