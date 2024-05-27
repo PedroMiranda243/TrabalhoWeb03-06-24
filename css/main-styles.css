@@ -10,12 +10,9 @@ header {
     padding: 15px 4%;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 9999
 }
 html,body{
-    width: 100%;
-    height: 100%;
-    z-index: 99;
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(39, 39, 39) 90.2%) !important;
     background-attachment: fixed;
     background-position: center;
@@ -24,6 +21,8 @@ html,body{
 }
 
 html{
+    width: 100%;
+    height: 100%;
     scroll-behavior: smooth;
 }
 /* estilização do conteúdo */
