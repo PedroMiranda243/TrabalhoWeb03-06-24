@@ -1,14 +1,41 @@
+/* .equipe-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    margin: 20px;
+} */
 .equipe-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 300px);
     justify-content: center;
     margin: 20px;
+    padding: 10px 20px;
+    
 }
+
+.equipe-container img{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+    background: #ffffff00;
+    cursor: pointer;
+    padding: 3px 0px;
+}
+
 .container-pedro,.container-camile,.container-rick,.container-icaro,.container-rodrigo,.container-jr{
     background-color: rgba(233, 15, 15, 0.445);
     margin: 10px;
     color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    
+}
+.container-pedro:hover,.container-camile:hover,.container-rick:hover,.container-icaro:hover,.container-rodrigo:hover,.container-jr:hover{
+    transform:scale(1.05);
+    box-shadow: 0px 0px 8px rgb(255, 243, 236);
 }
 body{
     background-image: url("../imgs/b22476b0a1c4b17aeff8e80ad123878e1588710651_main.png")!important;
@@ -20,4 +47,23 @@ body{
 .nav-bar{
     /* background-color: rgba(0, 0, 0, 0.726); */
     color: black!important;
+}
+
+#insta:hover{
+    display: inline-block;
+    transform:scale(1.05);
+    box-shadow: 0px 0px 8px rgb(255, 243, 236);
+    border-radius: 50px;
+}
+#facebook:hover{
+    display: inline-block;
+    transform:scale(1.05);
+    box-shadow: 0px 0px 8px rgb(255, 243, 236);
+    border-radius: 25px;
+}
+#youtube:hover{
+    display: inline-block;
+    transform:scale(1.05);
+    box-shadow: 0px 0px 8px rgb(255, 243, 236);
+    border-radius: 25px;
 }
