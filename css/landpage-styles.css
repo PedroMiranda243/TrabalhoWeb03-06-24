@@ -34,7 +34,7 @@
     
 }
 .container-pedro:hover,.container-camile:hover,.container-rick:hover,.container-icaro:hover,.container-rodrigo:hover,.container-jr:hover{
-    transform:scale(1.05);
+    transform:scale(1.08);
     box-shadow: 0px 0px 8px rgb(255, 243, 236);
 }
 body{
