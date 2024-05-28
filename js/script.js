@@ -131,3 +131,18 @@ function clearUsers() {
     console.log('Todos os usuários foram removidos do localStorage.');
     renderUsers();  // Atualiza a lista de usuários na interface, se aplicável
 }
+//modal para pagina about
+
+function openModal(){
+    const modal = document.querySelector('.modal')
+    const actualStyle = modal.style.display;
+    if(actualStyle = 'none'){
+        modal.style.display = 'block'
+    }
+    else{
+        modal.style.display = 'none'
+    }
+}
+const btn = document.querySelector('.container-camile')
+btn.addEventListener('click',openModal)
+
