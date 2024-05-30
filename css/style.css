@@ -149,11 +149,6 @@ body{
     .open {
         display: block;
     }
-    .equipe-container{
-        grid-template-columns: repeat(1, 1fr) !important; 
-        grid-template-rows: repeat(6, 600px)!important;
-        margin: 10px !important;
-    }
 }
 @media screen and (max-width:570px) {
     .img-hime {
@@ -200,7 +195,7 @@ body{
         }
      
     }
-    @media screen and (max-width:160px) {
+    @media screen and (max-width:190px) {
         .logo{
             display: none;
         }
@@ -228,3 +223,4 @@ footer {
 .footer-text, .social-media {
     margin: 10px 0; /* Espaçamento entre os itens */
 }
+

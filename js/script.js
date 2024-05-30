@@ -131,18 +131,25 @@ function clearUsers() {
     console.log('Todos os usuários foram removidos do localStorage.');
     renderUsers();  // Atualiza a lista de usuários na interface, se aplicável
 }
-//modal para pagina about
 
-function abrirModal(){
-    const modal = document.getElementById('modal')
-    modal.classList.add('open')
-    
-    modal.addEventListener('click',(e)=>{
-        if(e.target.id == 'close-modal' || e.target.id == 'modal'){
-            modal.classList.remove('.open')
-        
-        }
-    })
+function abrirModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.add('open');
+    // Adiciona o event listener para fechar a modal quando clicar fora dela
+    modal.addEventListener('click', fecharModalFora);
 }
 
+function fecharModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.classList.remove('open');
+    // Remove o event listener para evitar problemas de desempenho
+    modal.removeEventListener('click', fecharModalFora);
+}
 
+function fecharModalFora(event) {
+    // Fecha a modal apenas se o clique ocorrer fora da área da modal
+    if (event.target.classList.contains('modal')) {
+        event.target.classList.remove('open');
+        event.target.removeEventListener('click', fecharModalFora);
+    }
+}

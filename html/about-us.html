@@ -46,11 +46,11 @@
             <h1>Nossa Equipe</h1>
         </div>
         <div class="equipe-container">
-            <div class="container-camile" class="btn-modal" onclick="abrirModal()">
+            <div class="container-camile" onclick="abrirModal('modal-camile')">
                 <img src="../imgs/pessoas/Camile-Perfil.jpg" alt="Camile-Perfil">
                 <h1>Camile Marcele</h1>
                 <p>01592555</p>
-                <p>Ciências Da Computação </p>
+                <p>Ciências Da Computação</p>
                 
                 <div class="footer-container">
                     <img src="../imgs/icons8-js-48.png" alt="" width="10px">
@@ -58,18 +58,18 @@
                     <img src="../imgs/icons8-html-48.png" alt="">
                     <img src="../imgs/icons8-logo-java-coffee-cup-48.png" alt="">
                     <img src="../imgs/icons8-react-a-javascript-library-for-building-user-interfaces-48.png" alt="">
-                    <img src="../imgs/icons8-tailwind-css-48.png" alt="">
+                    <img src="../imgs/icons8-git-48 (1).png" alt="">
                 </div>
-                <div class="modal" id="modal">
-                    <div class="modal-content">
-
-                        <button class="close-modal" id="close-modal">X</button>
-                        <p>pspspsps</p>
-                    </div>
+            </div>
+            <div class="modal" id="modal-camile">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="fecharModal('modal-camile')">X</button>
+                    <p>Texto detalhado... 1</p>
                 </div>
             </div>
             
-            <div class="container-jr" onclick="window.location.href='https://www.linkedin.com/in/evânniomaia';">
+            
+            <div class="container-jr"  onclick="abrirModal('modal-jr')">
                 <img src="../imgs/pessoas/JR-Perfil.jpg" alt="JR-Perfil">
                 <h1>Evânnio Jr</h1>
                 <p>01603302</p>
@@ -82,12 +82,19 @@
 
                 </div>
             </div>
+            <div class="modal" id="modal-jr">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="fecharModal('modal-jr')">X</button>
+                    <p>Texto detalhado... 2</p>
+                </div>
+            </div>
+            
 
-            <div class="container-icaro" onclick="window.location.href='#'">
+            <div class="container-icaro" onclick="abrirModal('modal-icaro')">
                 <img src="../imgs/pessoas/Icaro-Perfil.jpg" alt="Icaro-Perfil">
                 <h1>Icaro Vinícius</h1>
                 <p>01599214</p>
-                <p>Sistemas de Informação   </p>
+                <p>Sistemas de Informação</p>
                 <div class="footer-container">
                     <img src="../imgs/icons8-js-48.png" alt="" width="10px">
                     <img src="../imgs/icons8-css-48.png" alt="">
@@ -96,8 +103,14 @@
 
                 </div>
             </div>
+            <div class="modal" id="modal-icaro">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="fecharModal('modal-icaro')">X</button>
+                    <p>Texto detalhado...3</p>
+                </div>
+            </div>
 
-            <div class="container-pedro" onclick="window.location.href='https://www.linkedin.com/in/pedro-miranda-23251b295/'">
+            <div class="container-pedro" onclick="abrirModal('modal-pedro')">
                 <img src="../imgs/pessoas/Pedro-Perfil.jpg" alt="Pedro-Perfil">
                 <h1>Pedro Miranda</h1>
                 <p>01607408</p>
@@ -106,10 +119,17 @@
                     <img src="../imgs/icons8-js-48.png" alt="" width="10px">
                     <img src="../imgs/icons8-mysql-48.png" alt="">
                     <img src="../imgs/icons8-logo-java-coffee-cup-48.png" alt="">
+                    <img src="../imgs/icons8-git-48 (1).png" alt="">
+                </div>
+            </div>
+            <div class="modal" id="modal-pedro">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="fecharModal('modal-pedro')">X</button>
+                    <p>Texto detalhado...4</p>
                 </div>
             </div>
             
-            <div class="container-rick" onclick="window.location.href='https://www.linkedin.com/in/ricardo-cézar-21958221b/'">
+            <div class="container-rick" onclick="abrirModal('modal-rick')">
                 <img src="../imgs/pessoas/Rick-Perfil.jpg" alt="Rick-Perfil">
                 <h1>Ricardo Cézar </h1>
                 <p>01596659</p>
@@ -117,12 +137,19 @@
                 <div class="footer-container">
                     <img src="../imgs/icons8-js-48.png" alt="" width="10px">
                     <img src="../imgs/icons8-css-48.png" alt="">
+                    <img src="../imgs/icons8-tailwind-css-48.png" alt="">
                     <img src="../imgs/icons8-html-48.png" alt="">
                     <img src="../imgs/icons8-python-48.png" alt="">
                 </div>
             </div>
+            <div class="modal" id="modal-rick">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="fecharModal('modal-rick')">X</button>
+                    <p>Texto detalhado...5</p>
+                </div>
+            </div>
             
-            <div class="container-rodrigo" onclick="window.location.href='https://www.linkedin.com/in/rodrigo-roberto-024837122/'">
+            <div class="container-rodrigo" onclick="abrirModal('modal-rodrigo')">
                 <img src="../imgs/pessoas/Rodrigo-Perfil.jpg" alt="Rodrigo-Perfil">
                 <h1>Rodrigo Roberto</h1>
                 <p>01597883</p>
@@ -133,6 +160,12 @@
                     <img src="../imgs/icons8-html-48.png" alt="">
                     <img src="../imgs/icons8-logo-java-coffee-cup-48.png" alt="">
 
+                </div>
+            </div>
+            <div class="modal" id="modal-rodrigo">
+                <div class="modal-content">
+                    <button class="close-modal" onclick="fecharModal('modal-rodrigo')">X</button>
+                    <p>Texto detalhado...6</p>
                 </div>
             </div>
         </div>

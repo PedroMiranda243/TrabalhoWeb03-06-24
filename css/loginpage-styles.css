@@ -150,12 +150,25 @@ margin: 5px;
 @media screen and (max-width:230px) {
   #container-login{
     padding: 0;
+    height: auto;
   }
   #login-form{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, auto);
     justify-content: center;
-    height: 250px;
+    height: auto;
+  }
+  #name-input{
+    margin: 0;
+    padding: 0;
+  }
+  #password-input{
+    margin: 0;
+    padding: 0;
+  }
+  #email-input{
+    margin: 0;
+    padding: 0;
   }
 }
