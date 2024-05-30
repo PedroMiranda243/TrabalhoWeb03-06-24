@@ -41,6 +41,15 @@ section h2{
 section p{
     font-size: 20px;
 }
+.login-button{
+    transition: .3s ease;
+}
+.login-button:hover{
+  transform: scale(1.08);
+  color: #ffffff;
+  
+}
+
 
 
 

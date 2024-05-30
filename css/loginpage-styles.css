@@ -138,3 +138,11 @@ border-radius: 5px;
     height: 250px;
   }
 }
+.login-button{
+  transition: .3s ease;
+}
+.login-button:hover{
+transform: scale(1.08);
+color: #ffffff;
+
+}

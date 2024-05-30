@@ -223,3 +223,11 @@ footer {
 .footer-text, .social-media {
     margin: 10px 0; /* Espaçamento entre os itens */
 }
+.login-button{
+    transition: .3s ease;
+}
+.login-button:hover{
+  transform: scale(1.08);
+  color: #ffffff;
+  
+}
