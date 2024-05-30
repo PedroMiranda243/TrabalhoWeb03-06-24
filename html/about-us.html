@@ -42,9 +42,11 @@
     </header>
     
     <main>
+        <div class="titulo">
+            <h1>Nossa Equipe</h1>
+        </div>
         <div class="equipe-container">
-
-            <div class="container-camile" onclick="openModal()">
+            <div class="container-camile" class="btn-modal" onclick="abrirModal()">
                 <img src="../imgs/pessoas/Camile-Perfil.jpg" alt="Camile-Perfil">
                 <h1>Camile Marcele</h1>
                 <p>01592555</p>
@@ -58,13 +60,15 @@
                     <img src="../imgs/icons8-react-a-javascript-library-for-building-user-interfaces-48.png" alt="">
                     <img src="../imgs/icons8-tailwind-css-48.png" alt="">
                 </div>
-                <div class="modal">
+                <div class="modal" id="modal">
                     <div class="modal-content">
+
+                        <button class="close-modal" id="close-modal">X</button>
                         <p>pspspsps</p>
-                        <button class="close-modal">X</button>
                     </div>
                 </div>
             </div>
+            
             <div class="container-jr" onclick="window.location.href='https://www.linkedin.com/in/evânniomaia';">
                 <img src="../imgs/pessoas/JR-Perfil.jpg" alt="JR-Perfil">
                 <h1>Evânnio Jr</h1>

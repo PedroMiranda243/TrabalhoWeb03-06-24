@@ -133,16 +133,16 @@ function clearUsers() {
 }
 //modal para pagina about
 
-function openModal(){
-    const modal = document.querySelector('.modal')
-    const actualStyle = modal.style.display;
-    if(actualStyle = 'none'){
-        modal.style.display = 'block'
-    }
-    else{
-        modal.style.display = 'none'
-    }
+function abrirModal(){
+    const modal = document.getElementById('modal')
+    modal.classList.add('open')
+    
+    modal.addEventListener('click',(e)=>{
+        if(e.target.id == 'close-modal' || e.target.id == 'modal'){
+            modal.classList.remove('.open')
+        
+        }
+    })
 }
-const btn = document.querySelector('.container-camile')
-btn.addEventListener('click',openModal)
+
 
