@@ -1,10 +1,3 @@
-/* .equipe-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 300px);
-    justify-content: center;
-    margin: 20px;
-} */
 .equipe-container{
     display: grid;
     grid-template-columns: repeat(3, 400px);
@@ -47,9 +40,15 @@
     margin: 30px;
     color: white;
     cursor: pointer;
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
     border-radius: 20px;
+    transition: ease 0.3s;
+    box-shadow: 0px 0px 8px #ffffffb2;
+}
+.container-pedro:hover,.container-camile:hover,.container-rick:hover,.container-icaro:hover,.container-rodrigo:hover,.container-jr:hover{
+    transform: scale(1.05);
 }
 
 body{
@@ -86,6 +85,19 @@ body{
 .modal.open {
     display: flex !important;
 }
+@keyframes abrirmodal{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-20px,-5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+.open.modal{
+    animation: abrirmodal 0.5s;
+}
 
 .modal-content {
     width: 35%;
@@ -97,9 +109,13 @@ body{
     padding: 50px;
     z-index: 99999;
     border-radius: 20px;
+    transition: 0.6s ease;
 }
-@media screen and (max-width:620px) {
-    
+@media screen and (max-width:1300px) {
+    .modal-content {
+        width: 50%;
+        height: 40%;
+    }
 }
 .close-modal {
     width: 50px;
