@@ -153,3 +153,31 @@ function fecharModalFora(event) {
         event.target.removeEventListener('click', fecharModalFora);
     }
 }
+
+//form usuario
+document.getElementById('form-usuario').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    var sugestao = document.getElementById('sugestao').value;
+    
+    if (sugestao) {
+        // Obtendo sugestões armazenadas anteriormente
+        var sugestoesArmazenadas = JSON.parse(localStorage.getItem('sugestoes')) || [];
+        
+        // Adicionando a nova sugestão
+        sugestoesArmazenadas.push(sugestao);
+        
+        // Armazenando novamente no local storage
+        localStorage.setItem('sugestoes', JSON.stringify(sugestoesArmazenadas));
+        
+        alert('Sugestão enviada e armazenada com sucesso!');
+        document.getElementById('form-usuario').reset();
+    } else {
+        alert('Por favor, insira sua sugestão antes de enviar.');
+    }
+});
+
+document.getElementById('verificar-sugestoes').addEventListener('click', function() {
+    var sugestoesArmazenadas = JSON.parse(localStorage.getItem('sugestoes')) || [];
+    console.log('Sugestões armazenadas:', sugestoesArmazenadas);
+});

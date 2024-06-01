@@ -16,6 +16,8 @@ body,html {
   border-radius: 20px;
   padding:35px;
 }
+
+
 #container-login a{
   transition: 0.5s;
 }
@@ -47,6 +49,7 @@ body,html {
   background-color: #f47521;
   transition: 1s;
   font-size: 15px;
+  font-weight: bold;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 10px;
@@ -56,9 +59,24 @@ body,html {
   height: 40px;
   margin: 20px;
 }
-.btn-login:hover{
-  background-color: #fca66d9a;
+#verificar-sugestoes{
+  background-color: #f47521;
+  transition: 1s;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 40px;
+  margin: 20px;
 }
+#verificar-sugestoes:hover{
+  background-color: rgb(255, 255, 255);
+}
+
 
 #email-input {
   background-color: #141519d7;
@@ -171,4 +189,76 @@ margin: 5px;
     margin: 0;
     padding: 0;
   }
+}
+@media screen and (max-width:600px) {
+  .form-content{
+    padding: 0;
+    height: auto;
+  }
+  #form-usuario{
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);
+    grid-template-rows: repeat(4, auto);
+    justify-content: center;
+    height: auto;
+  }
+  @media screen and (max-width:250px) {
+    #sugestao {
+      padding: 0;
+    }
+    .usuario-form{
+      padding: 0px;
+    }
+}
+}
+
+.usuario-form {
+  background-color: #141519d7;
+  color: white;
+  max-width: 400px;
+  margin: 80px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 35px;
+}
+
+#form-usuario {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, auto);
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.form-content textarea {
+  background-color: #141519d7;
+  color: #FFF;
+  outline: none;
+  text-align: start;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  height: 200px;
+  width: 100%;
+  margin-top: 5px;
+  resize: none; /* Opcional: para desabilitar redimensionamento */
+}
+
+.form-content textarea::placeholder {
+  color: #AAA;
+  text-align: start;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.btn-login:hover {
+    background-color: rgb(255, 255, 255);
+}
+.form-content{
+  display: flex;
+  flex-direction: column;
 }
