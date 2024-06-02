@@ -181,3 +181,20 @@ document.getElementById('verificar-sugestoes').addEventListener('click', functio
     var sugestoesArmazenadas = JSON.parse(localStorage.getItem('sugestoes')) || [];
     console.log('Sugestões armazenadas:', sugestoesArmazenadas);
 });
+
+
+// dark-mode scripts
+
+// let darkmode = document.getElementById('darkmode')
+// let body = document.querySelector('body')
+
+// darkmode.addEventListener('click',()=>{
+//     darkmode.classList.toggle('dark')
+//     body.classList.toggle('dark')
+// })
+
+const chk = document.getElementById('chk')
+
+chk.addEventListener('change', ()=>{
+    document.body.classList.toggle('dark')
+})

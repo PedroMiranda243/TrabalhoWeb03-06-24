@@ -63,12 +63,6 @@ body{
     color: black!important;
 }
 
-#insta:hover,#facebook:hover,#youtube:hover{
-    display: inline-block;
-    transform:scale(1.05);
-    box-shadow: 0px 0px 8px rgb(255, 243, 236);
-    border-radius: 50px;
-}
 .modal {
     display: none;
     align-items: center;

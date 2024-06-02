@@ -15,13 +15,6 @@
     font-weight: 400;
     font-style: normal;
 }
-body{
-    background-image: url("../imgs/copper-icosahedron-pattern-black.jpg");
-    background-attachment: fixed;
-    background-position:  center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .nav-bar {
     display: flex;
@@ -60,6 +53,84 @@ body{
     color: #FFFFFF;
     background-image: url("../imgs/Crunchyroll-Symbol-branco.png");
 }
+
+/* Dark Mode */
+/* .darkmode{
+    width: 120px;
+    height: 50px;
+    background-color: #4d4d4d;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+.darkmode .btn-darkmode{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+.darkmode.dark{
+    background-color: #c3c3c3;
+}
+.darkmode.dark .btn-darkmode{
+    left: 80px;
+    background-color: #fff;
+}
+body.dark{
+    background-color: #e4e4e4;
+} */
+.moon{
+    width: 20px;
+    height: 20px;
+    
+}
+.sun{
+    width: 20px;
+    height: 20px;
+}
+
+body.dark{
+    background: #232c35;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+}
+.label .ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+
+    height: 25px;
+    width: 25px;
+    transform: translateX(0px);
+    transition: transform 0.3s linear;
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
 
 .nav-list {
     display: flex;
@@ -231,3 +302,9 @@ footer {
     margin: 10px 0; /* Espaçamento entre os itens */
 }
 
+#insta:hover,#facebook:hover,#youtube:hover{
+    display: inline-block;
+    transform:scale(1.05);
+    box-shadow: 0px 0px 8px rgb(255, 243, 236);
+    border-radius: 50px;
+}
